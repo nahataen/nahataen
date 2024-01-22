@@ -21,4 +21,10 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=nahataen&icon=0&color=0)](https://visitcount.itsvg.in)
 
+
+## Estadísticas del Perfil
+
+![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&count_private=true&hide=prs,issues,contribs&theme=radical)
+
+
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
