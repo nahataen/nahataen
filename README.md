@@ -1,5 +1,6 @@
 <div id="header" align="center">
-  <img src="https://media0.giphy.com/media/IWiAPmq1HS9QZRu8PT/giphy.gif?cid=ecf05e47mme60ihk570r3hz8mn9lcs660ovheey4w9j9d8gz&ep=v1_gifs_related&rid=giphy.gif&ct=s" width="100"/>
+  <img src="![_008bb0f2-f012-4941-bc1b-dd89d0250565](https://github.com/nahataen/nahataen/assets/4331964/fad324ab-dd40-4b9c-92ea-0e32887a4a43)
+" width="100"/>
 </div>
 
 
