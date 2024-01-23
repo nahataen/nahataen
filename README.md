@@ -1,6 +1,4 @@
-<div id="header" align="center">
-  <img src="https://drive.google.com/file/d/1MGlf98pwL3GheF12SKKwBtnfh3T-752k/view?usp=sharing" width="100"/>
-</div>
+![Descripción de la imagen](https://drive.google.com/uc?id=1MGlf98pwL3GheF12SKKwBtnfh3T-752k)
 
 
 
