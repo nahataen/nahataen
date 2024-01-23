@@ -1,6 +1,5 @@
 <div id="header" align="center">
-  <img src="![_008bb0f2-f012-4941-bc1b-dd89d0250565](https://github.com/nahataen/nahataen/assets/4331964/fad324ab-dd40-4b9c-92ea-0e32887a4a43)
-" width="100"/>
+  <img src="!https://github.com/nahataen/nahataen/assets/4331964/fad324ab-dd40-4b9c-92ea-0e32887a4a43" width="100"/>
 </div>
 
 
