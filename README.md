@@ -1,4 +1,6 @@
-![Descripción de la imagen](https://drive.google.com/uc?id=1MGlf98pwL3GheF12SKKwBtnfh3T-752k)
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1MGlf98pwL3GheF12SKKwBtnfh3T-752k" alt="Descripción de la imagen" width="300"/>
+</p>
 
 
 
