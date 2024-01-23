@@ -6,7 +6,22 @@
 
 # 💫 Acerca De Mí
 
-¡Hola! Soy Nahataen un apasionado de la tecnología y el diseño gráfico. Me encanta crear arte digital y tradicional, y también disfruto del modelado 3D y la animación como pasatiempo. En cuanto a programación, tengo experiencia en Java, Python, MySQL, SQL, Django, JavaScript, CSS, Bootstrap, Tailwind, React.js, C#, y Linux. También tengo conocimientos en redes, Arduino, Node.js, Vite.js, y manejo GitHub y GitLab para mis repositorios. Además, tengo experiencia en Scrum, arquitectura de software, manejo de proyectos con Kanban, uso de Trello, y diagrama de Gantt. En marketing digital, tengo experiencia en manejo de redes sociales, creación de chatbots automáticos para Facebook, Google My Business, Olaclick, correos con formato, SRS de proyectos, entrega de documentos con formato IEEE, APA7 ya sea en Docx o LaTeX, y manejo de herramientas ofimáticas. También tengo experiencia en diseño gráfico, como Photoshop, Illustrator, Adobe XD, creación de wireframes y mockups, diseño UX/UI, psicología del color, principios del diseño de la Gestalt, y los 12 principios de la animación. En cuanto a base de datos, tengo experiencia en diccionario de datos, modelo entidad-relación, modelo relacional en bases de datos relacionales, KPI en desempeño, y gestión de proyectos. Nivel de inglés pre-intermedio.Soy autodidacta y me gusta aprender y estar al tanto de buscar información de un tema que sea nuevo para mí. 😊<br><br>
+<div style="border: 2px solid #3498db; padding: 10px; border-radius: 5px; background-color: #ecf0f1;">
+
+¡Hola! Soy Nahataen, un apasionado de la tecnología y el diseño gráfico. Me encanta crear arte digital y tradicional. También disfruto del modelado 3D y la animación como pasatiempo. En cuanto a programación, tengo experiencia en **Java, Python, MySQL, SQL, Django, JavaScript, CSS, Bootstrap, Tailwind, React.js, C#, y Linux**.
+
+Además, poseo conocimientos en redes, Arduino, Node.js, Vite.js, y manejo GitHub y GitLab para mis repositorios. También tengo experiencia en Scrum, arquitectura de software, manejo de proyectos con Kanban, uso de Trello y diagrama de Gantt.
+
+En el ámbito del marketing digital, cuento con experiencia en el manejo de redes sociales, creación de chatbots automáticos para Facebook, Google My Business, Olaclick, correos con formato, SRS de proyectos, entrega de documentos con formato IEEE, APA7 ya sea en Docx o LaTeX, y manejo de herramientas ofimáticas.
+
+Mis habilidades en diseño gráfico incluyen Photoshop, Illustrator, Adobe XD, creación de wireframes y mockups, diseño UX/UI, psicología del color, principios del diseño de la Gestalt y los 12 principios de la animación.
+
+En cuanto a base de datos, tengo experiencia en diccionario de datos, modelo entidad-relación, modelo relacional en bases de datos relacionales, KPI en desempeño y gestión de proyectos. Mi nivel de inglés es pre-intermedio.
+
+Soy autodidacta y me gusta aprender, siempre estoy buscando información sobre temas nuevos para mí. 😊
+
+</div>
+
 
 
 # 💻 Manejo De Tecnologías:
