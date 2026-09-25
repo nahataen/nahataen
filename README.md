@@ -71,26 +71,22 @@
 ### 📈 Actividad
 
 <!-- Azul #2F81F7 + cian #39C5CF: contraste AA en claro y oscuro.
-     Se reemplaza el streak (se rompe y castiga vacaciones) por gráfico de actividad. -->
+     Snake generada por Actions en tu propio repo (rama output): no depende
+     de APIs externas que se caen. Trofeos con tema según modo. -->
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=2F81F7&icon_color=39C5CF&text_color=C9D1D9" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=24292F" />
-  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" height="150" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true&bg_color=0D1117&title_color=2F81F7&text_color=C9D1D9" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true&bg_color=FFFFFF&title_color=0969DA&text_color=24292F" />
-  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true" height="150" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/github-snake.svg" />
+  <img alt="Snake eating contributions" src="https://raw.githubusercontent.com/nahataen/nahataen/output/github-snake.svg" />
 </picture>
 </p>
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=nahataen&bg_color=0D1117&color=39C5CF&line=2F81F7&point=2F81F7&area=true&hide_border=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=nahataen&bg_color=FFFFFF&color=0969DA&line=0969DA&point=0969DA&area=true&hide_border=true" />
-  <img alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=nahataen&bg_color=FFFFFF&color=0969DA&line=0969DA&point=0969DA&area=true&hide_border=true" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=nahataen&theme=tokyonight&no-frame=true&row=1&column=6" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=nahataen&theme=flat&no-frame=true&row=1&column=6" />
+  <img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=nahataen&theme=flat&no-frame=true&row=1&column=6" />
 </picture>
 </p>
 
