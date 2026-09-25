@@ -58,8 +58,9 @@ def datos_reales():
     """Baja las contribuciones publicas del ultimo anio via GraphQL."""
     consulta = {
         "query": ("query($login:String!){user(login:$login){"
-                  "contributionsCollection{totalContributions "
-                  "contributionCalendar{weeks{contributionDays{"
+                  "contributionsCollection{"
+                  "contributionCalendar{totalContributions "
+                  "weeks{contributionDays{"
                   "contributionCount date}}}}}}"),
         "variables": {"login": USER},
     }
@@ -71,12 +72,15 @@ def datos_reales():
                  "User-Agent": "invasor-de-commits"},
     )
     respuesta = json.load(urllib.request.urlopen(peticion, timeout=30))
+    if "errors" in respuesta:
+        raise RuntimeError("GitHub API: %s" % respuesta["errors"])
     coleccion = respuesta["data"]["user"]["contributionsCollection"]
+    calendario = coleccion["contributionCalendar"]
     semanas = [[d["contributionCount"] for d in s["contributionDays"]]
-               for s in coleccion["contributionCalendar"]["weeks"]]
+               for s in calendario["weeks"]]
     fechas = [[d["date"] for d in s["contributionDays"]]
-              for s in coleccion["contributionCalendar"]["weeks"]]
-    return semanas, fechas, coleccion["totalContributions"]
+              for s in calendario["weeks"]]
+    return semanas, fechas, calendario["totalContributions"]
 
 
 def datos_falsos():
