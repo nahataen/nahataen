@@ -1,0 +1,29 @@
+name: genera snake azul
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths: [ .github/workflows/snake.yml ]
+jobs:
+  genera:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=2F81F7&color_dots=EAEEF2,9EC1DB,39C5CF,2F81F7,0969DA
+            dist/github-snake-dark.svg?color_snake=39C5CF&color_dots=161B22,1B3A5C,2F81F7,39C5CF,7DF9FF
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "chore: actualiza snake azul"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
