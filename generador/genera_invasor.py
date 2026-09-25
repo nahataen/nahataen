@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Invasor de commits - animacion SVG 100% propia para el perfil.
+"""Particulas de commits - animacion SVG 100% propia para el perfil.
 
 Lee el calendario real de contribuciones del usuario con la API de GitHub
-y genera un SVG animado (SMIL, sin JavaScript): un invasor pixel-art
-recorre la cuadricula y dispara rayos a los dias con mas actividad.
+y genera un SVG animado (SMIL, sin JavaScript): particulas que nacen en
+los dias con mas actividad y flotan hacia arriba desvaneciendose.
 
 Uso en local (prueba con datos falsos, sin token):
     MOCK=1 python generador/genera_invasor.py
@@ -11,7 +11,7 @@ Uso en local (prueba con datos falsos, sin token):
 Uso en Actions (datos reales):
     GITHUB_TOKEN=... GITHUB_USER=nahataen python generador/genera_invasor.py
 
-Genera: dist/invasor.svg (claro) y dist/invasor-dark.svg (oscuro).
+Genera: dist/particulas.svg (claro) y dist/particulas-dark.svg (oscuro).
 """
 
 import json
@@ -25,19 +25,7 @@ MOCK = os.environ.get("MOCK", "")
 
 CELL, GAP = 11, 4
 STEP = CELL + GAP
-LANE_H, LABEL_H, FOOT_H, PAD = 54, 16, 30, 12
-CYCLE = 14.0  # segundos que dura una vuelta completa de la animacion
-
-INVADER = [
-    "..X.....X..",
-    "...X...X...",
-    "..XXXXXXX..",
-    ".XX.XXX.XX.",
-    "XXXXXXXXXXX",
-    "X.XXXXXXX.X",
-    "X.X.....X.X",
-    "...XX.XX...",
-]
+TOP_H, LABEL_H, FOOT_H, PAD = 30, 16, 30, 12
 
 MESES = ["", "ENE", "FEB", "MAR", "ABR", "MAY", "JUN",
          "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"]
@@ -46,11 +34,13 @@ PALETAS = {
     "claro": {"fondo": "#FFFFFF", "vacio": "#EAEEF2",
               "celdas": ["#9EC1DB", "#39C5CF", "#2F81F7", "#0969DA"],
               "tinta": "#24292F", "tenue": "#57606A",
-              "rayo": "#0969DA", "invasor": "#2F81F7", "estrella": "#D0D7DE"},
+              "particula": "#2F81F7", "particula2": "#39C5CF",
+              "estrella": "#D0D7DE"},
     "oscuro": {"fondo": "#0D1117", "vacio": "#161B22",
                "celdas": ["#1B3A5C", "#2F81F7", "#39C5CF", "#7DF9FF"],
                "tinta": "#E6EDF3", "tenue": "#7D8590",
-               "rayo": "#39C5CF", "invasor": "#39C5CF", "estrella": "#30363D"},
+               "particula": "#39C5CF", "particula2": "#2F81F7",
+               "estrella": "#30363D"},
 }
 
 
@@ -69,13 +59,13 @@ def datos_reales():
         data=json.dumps(consulta).encode(),
         headers={"Authorization": "Bearer " + TOKEN,
                  "Content-Type": "application/json",
-                 "User-Agent": "invasor-de-commits"},
+                 "User-Agent": "particulas-de-commits"},
     )
     respuesta = json.load(urllib.request.urlopen(peticion, timeout=30))
     if "errors" in respuesta:
         raise RuntimeError("GitHub API: %s" % respuesta["errors"])
-    coleccion = respuesta["data"]["user"]["contributionsCollection"]
-    calendario = coleccion["contributionCalendar"]
+    calendario = (respuesta["data"]["user"]
+                  ["contributionsCollection"]["contributionCalendar"])
     semanas = [[d["contributionCount"] for d in s["contributionDays"]]
                for s in calendario["weeks"]]
     fechas = [[d["date"] for d in s["contributionDays"]]
@@ -114,7 +104,7 @@ def construir_svg(semanas, fechas, total, paleta):
     ancho_rejilla = ncols * STEP - GAP
     alto_rejilla = 7 * STEP - GAP
     ancho = PAD * 2 + ancho_rejilla
-    rejilla_y = PAD + LANE_H + LABEL_H
+    rejilla_y = PAD + TOP_H + LABEL_H
     alto = rejilla_y + alto_rejilla + FOOT_H + PAD
 
     tope = max((c for s in semanas for c in s), default=0)
@@ -146,7 +136,7 @@ def construir_svg(semanas, fechas, total, paleta):
         if mes != mes_previo:
             mes_previo = mes
             push('<text x="%d" y="%d" font-size="9" fill="%s">%s</text>'
-                 % (PAD + col * STEP, PAD + LANE_H + 12,
+                 % (PAD + col * STEP, PAD + TOP_H + 12,
                     paleta["tenue"], MESES[mes]))
 
     # Celdas de contribuciones.
@@ -158,66 +148,62 @@ def construir_svg(semanas, fechas, total, paleta):
             color = paleta["vacio"] if niv < 0 else paleta["celdas"][niv]
             x = PAD + col * STEP
             y = rejilla_y + fila * STEP
-            celdas.append((col, fila, cuenta, x, y, color))
+            celdas.append((col, fila, cuenta, x, y))
             push('<rect x="%d" y="%d" width="%d" height="%d" rx="2.5" fill="%s"/>'
                  % (x, y, CELL, CELL, color))
 
-    # Objetivos: dias con mas actividad, separados entre si.
+    # Dias con mas actividad: pulso suave.
     candidatas = sorted([c for c in celdas if c[2] > 0],
                         key=lambda c: -c[2])
     if not candidatas:
         candidatas = [celdas[i * len(celdas) // 12] for i in range(12)]
-    objetivos, usadas = [], []
+    destacadas, usadas = [], []
     for cand in candidatas:
         if all(abs(cand[0] - u) >= 3 for u in usadas):
-            objetivos.append(cand)
+            destacadas.append(cand)
             usadas.append(cand[0])
-        if len(objetivos) == 12:
+        if len(destacadas) == 12:
             break
-    while len(objetivos) < 12:
-        objetivos.append(celdas[len(objetivos) * len(celdas) // 12])
+    while len(destacadas) < 12:
+        destacadas.append(celdas[len(destacadas) * len(celdas) // 12])
+    for i, (_, _, _, x, y) in enumerate(destacadas):
+        push('<rect x="%d" y="%d" width="%d" height="%d" rx="2.5" '
+             'fill="none" stroke="%s" stroke-width="1.5" opacity="0">'
+             '<animate attributeName="opacity" values="0;0.9;0" '
+             'keyTimes="0;0.5;1" dur="%ss" begin="%ss" '
+             'repeatCount="indefinite"/></rect>'
+             % (x - 2, y - 2, CELL + 4, CELL + 4, paleta["particula"],
+                fmt(2.4 + (i % 4) * 0.5), fmt(i * 0.35)))
 
-    # Rayos + destellos sincronizados con el ciclo.
-    for i, (_, _, _, x, y, _) in enumerate(objetivos):
-        t0 = 1.0 + i * (CYCLE - 2.0) / 12
-        golpe = t0 + 0.45
-        h0, h1 = fmt(t0 / CYCLE), fmt(golpe / CYCLE)
-        h2 = fmt(min(1.0, golpe / CYCLE + 0.03))
-        cx = x + CELL / 2 - 1.5
-        cy = y + CELL / 2 - 5
-        push('<rect x="%s" y="50" width="3" height="10" rx="1.5" fill="%s" opacity="0">'
-             '<animate attributeName="y" values="50;%d;%d" keyTimes="0;%s;1" '
-             'dur="%ss" repeatCount="indefinite"/>'
-             '<animate attributeName="opacity" values="0;1;1;0" '
-             'keyTimes="0;%s;%s;%s" dur="%ss" repeatCount="indefinite"/></rect>'
-             % (fmt(cx), paleta["rayo"], cy, cy, h0, CYCLE, h0, h1, h2, CYCLE))
-        f1 = fmt(min(1.0, golpe / CYCLE + 0.02))
-        f2 = fmt(min(1.0, golpe / CYCLE + 0.06))
-        push('<rect x="%d" y="%d" width="%d" height="%d" rx="2.5" fill="#FFFFFF" opacity="0">'
-             '<animate attributeName="opacity" values="0;0;0.9;0" '
-             'keyTimes="0;%s;%s;%s" dur="%ss" repeatCount="indefinite"/></rect>'
-             % (x, y, CELL, CELL, h1, f1, f2, CYCLE))
-
-    # Invasor: avanza por el carril y flota.
-    viaje = ancho_rejilla - 33
-    push('<g><animateTransform attributeName="transform" type="translate" '
-         'from="0 0" to="%d 0" dur="%ss" repeatCount="indefinite"/>'
-         '<g><animateTransform attributeName="transform" type="translate" '
-         'values="0 0;0 3;0 0" dur="1s" repeatCount="indefinite"/>' % (viaje, fmt(CYCLE)))
-    for f, fila in enumerate(INVADER):
-        for c, ch in enumerate(fila):
-            if ch == "X":
-                push('<rect x="%d" y="%d" width="3" height="3" fill="%s"/>'
-                     % (PAD + c * 3, 12 + f * 3, paleta["invasor"]))
-    push("</g></g>")
+    # Particulas: nacen en dias activos y flotan hacia arriba.
+    fuentes = [c for c in celdas if c[2] > 0] or celdas
+    azar = random.Random(11)
+    for i in range(26):
+        col, _, _, x, y = azar.choice(fuentes)
+        x0 = x + CELL / 2
+        y0 = y + CELL / 2
+        subida = round(azar.uniform(40, 110), 1)
+        deriva = round(azar.uniform(-24, 24), 1)
+        dur = round(azar.uniform(3.0, 6.0), 1)
+        r = round(azar.uniform(1.5, 3.0), 1)
+        color = paleta["particula"] if i % 2 == 0 else paleta["particula2"]
+        push('<circle cx="%s" cy="%s" r="%s" fill="%s" opacity="0">'
+             '<animate attributeName="cy" values="%s;%s" '
+             'dur="%ss" begin="%ss" repeatCount="indefinite"/>'
+             '<animate attributeName="cx" values="%s;%s" '
+             'dur="%ss" begin="%ss" repeatCount="indefinite"/>'
+             '<animate attributeName="opacity" values="0;0.95;0" '
+             'keyTimes="0;0.25;1" dur="%ss" begin="%ss" '
+             'repeatCount="indefinite"/></circle>'
+             % (fmt(x0), fmt(y0), r, color,
+                fmt(y0), fmt(y0 - subida), dur, fmt(i * 0.35),
+                fmt(x0), fmt(x0 + deriva), dur, fmt(i * 0.35),
+                dur, fmt(i * 0.35)))
 
     # Pie con el total real.
     pie_y = rejilla_y + alto_rejilla + 22
     push('<text x="%d" y="%d" font-size="13" font-weight="bold" fill="%s">'
-         'INVASOR // %s</text>' % (PAD, pie_y, paleta["tinta"], USER.upper()))
-    texto_total = "CONTRIBUCIONES: %d" % total
-    push('<text x="%d" y="%d" font-size="13" text-anchor="end" fill="%s">%s</text>'
-         % (ancho - PAD, pie_y, paleta["tinta"], texto_total))
+         'CONTRIBUCIONES: %d</text>' % (PAD, pie_y, paleta["tinta"], total))
     push("</svg>")
     return "\n".join(partes)
 
@@ -230,7 +216,8 @@ def main():
         semanas, fechas, total = datos_reales()
         print("datos reales de %s: %d contribuciones" % (USER, total))
     os.makedirs("dist", exist_ok=True)
-    for nombre, tema in (("invasor.svg", "claro"), ("invasor-dark.svg", "oscuro")):
+    for nombre, tema in (("particulas.svg", "claro"),
+                         ("particulas-dark.svg", "oscuro")):
         svg = construir_svg(semanas, fechas, total, PALETAS[tema])
         with open(os.path.join("dist", nombre), "w", encoding="utf-8") as archivo:
             archivo.write(svg)

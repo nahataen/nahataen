@@ -71,16 +71,16 @@
 
 ### 📈 Actividad
 
-<!-- 👾 INVASOR DE COMMITS: animacion 100% propia.
+<!-- 👾 PARTICULAS: animacion 100% propia.
      El script generador/genera_invasor.py lee tus contribuciones reales
      y dibuja el SVG. El Action lo regenera solo cada dia en la rama output.
      Sin servidores de terceros. -->
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/invasor-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/invasor.svg" />
-  <img alt="Invasor disparando a mis contribuciones" src="https://raw.githubusercontent.com/nahataen/nahataen/output/invasor.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/particulas-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/particulas.svg" />
+  <img alt="Particulas sobre mis contribuciones" src="https://raw.githubusercontent.com/nahataen/nahataen/output/particulas.svg" />
 </picture>
 </p>
 
