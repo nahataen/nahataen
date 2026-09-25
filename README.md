@@ -71,15 +71,23 @@
 
 ### 📈 Actividad
 
-<!-- Azul #2F81F7 + cian #39C5CF: contraste AA en claro y oscuro.
-     Snake generada por Actions en tu propio repo (rama output): no depende
-     de APIs externas que se caen. Trofeos con tema según modo. -->
+<!-- Pac-Man + Breakout generados por Actions en tu propio repo (rama output):
+     Pac-Man come tus contribuciones con fantasmas; Breakout las rompe con pelota.
+     Temas github / github-dark según modo. Se actualizan solos cada día. -->
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/github-snake.svg" />
-  <img alt="Snake eating contributions" src="https://raw.githubusercontent.com/nahataen/nahataen/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/pacman-contribution-graph-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/pacman-contribution-graph.svg" />
+  <img alt="Pac-Man eating contributions" src="https://raw.githubusercontent.com/nahataen/nahataen/output/pacman-contribution-graph.svg" />
+</picture>
+</p>
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/breakout-contribution-graph-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/breakout-contribution-graph.svg" />
+  <img alt="Breakout breaking contributions" src="https://raw.githubusercontent.com/nahataen/nahataen/output/breakout-contribution-graph.svg" />
 </picture>
 </p>
 
