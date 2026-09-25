@@ -13,7 +13,7 @@
   <img src="https://komarev.com/ghpvc/?username=nahataen&style=for-the-badge&color=2F81F7&label=VISITAS" alt="Contador de visitas" />
 </p>
 
-<p align="center"><i>Desarrollador de software apasionado por la IA, Linux, la automatización y el arte digital — construyendo sistemas de inventario y apps web con TypeScript y Python/Django. Abierto a roles Jr / Trainee.</i></p>
+<p align="center"><i>Desarrollador de software enfocado en Linux, automatización de sistemas y desarrollo web. Interés por el arte digital y capacidad de adaptación a nuevas tecnologías. Abierto a roles Trainee.</i></p>
 
 ---
 
