@@ -1,0 +1,30 @@
+name: genera invasor de commits
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths: [ generador/**, .github/workflows/invasor.yml ]
+jobs:
+  genera:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python generador/genera_invasor.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "chore: actualiza animacion invasor"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
