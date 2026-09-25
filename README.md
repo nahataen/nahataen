@@ -1,49 +1,38 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:161B22&height=140&section=header&text=Nahataen&fontSize=42&fontColor=58A6FF&animation=fadeIn&fontAlignY=38" />
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:D0D7DE,100:EAEEF2&height=140&section=header&text=Nahataen&fontSize=42&fontColor=0969DA&animation=fadeIn&fontAlignY=38" />
-  <img alt="Nahataen header" src="https://capsule-render.vercel.app/api?type=waving&color=0:D0D7DE,100:EAEEF2&height=140&section=header&text=Nahataen&fontSize=42&fontColor=0969DA&fontAlignY=38" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,100:39C5CF&height=140&section=header&text=Nahataen&fontSize=42&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" />
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0969DA,100:39C5CF&height=140&section=header&text=Nahataen&fontSize=42&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" />
+  <img alt="Nahataen header" src="https://capsule-render.vercel.app/api?type=waving&color=0:0969DA,100:39C5CF&height=140&section=header&text=Nahataen&fontSize=42&fontColor=FFFFFF&fontAlignY=38" />
 </picture>
 
-<!-- ============================================================
- V2 — Basada en plantillas bien valoradas:
- - anuraghazra / DenverCoder1: 1 solo tema en todos los widgets
- - AwesomeGithubProfileTemplates: Retro + Typing (3 líneas, pausa lenta)
- - Regla 2026: intro humana primero, tabla de proyectos con resultado,
-   1 solo CTA, sin muro de badges.
- Todo lo marcado [EDITAME] lo cambias tú.
-============================================================ -->
-
 <p align="center">
-  <a href="https://github.com/nahataen"><img src="https://github.com/nahataen.png?size=100" width="100" alt="avatar" /></a>
+  <a href="https://github.com/nahataen"><img src="https://github.com/nahataen.png?size=100" width="100" alt="Nahataen avatar" /></a>
 </p>
 
-<h3 align="center">[EDITAME: Nahataen — Fullstack Developer · Tijuana, MX]</h3>
-<p align="center">[EDITAME: Construyo inventarios y apps web con TypeScript y Python/Django. Busco rol Jr.]</p>
+<h3 align="center">Nahataen — Fullstack Developer · Tijuana, MX</h3>
+<p align="center">Software developer into AI, Linux, automation and digital art. Building inventory systems and web apps with TypeScript and Python/Django. Open to Jr / Trainee roles.</p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=2F81F7&center=true&vCenter=true&width=520&lines=TypeScript+%2B+React+en+frontend;Python+%2B+Django+en+backend;Open+to+work+Jr" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=2F81F7&center=true&vCenter=true&width=520&lines=TypeScript+%2B+React+en+frontend;Python+%2B+Django+en+backend;Tijuana%2C+MX+%7C+Open+to+work" alt="typing" />
 </p>
 
 <p align="center">
-  <a href="[EDITAME: https://linkedin.com/in/tu-usuario]">LinkedIn</a> ·
-  <a href="[EDITAME: https://tu-portafolio.com]">Portafolio</a> ·
-  <a href="mailto:[EDITAME: tu-email@mail.com]">Email</a>
+  <a href="https://github.com/nahataen">GitHub</a> ·
+  📍 Tijuana, MX ·
+  💼 Open to work
 </p>
 
 ---
 
-### 👾 Sobre mí — [EDITAME: 4 bullets, 1 dato cada uno]
+### 👾 Sobre mí
 
-- 🔭 Construyendo ahora: [EDITAME: Sistema de inventario UNEA — link al repo]
-- 🌱 Aprendiendo: [EDITAME: Ej. Docker compose — llevo 2 meses, ya deployo mis proyectos]
-- 💬 Pregúntame de: [EDITAME: Ej. automatización Python, CRUDs Django]
-- ⚡ Fuera de código: [EDITAME: Ej. pixel-art, Linux]
-
-> [EDITAME: Disponible para Jr / Trainee — Tijuana / remoto]
+- 🔭 Construyendo ahora: Sistema integral de inventario UNEA en TypeScript
+- 🌱 Enfoque: frontend React + TS, backend Python/Django + MySQL, deploys con Docker
+- 💬 Pregúntame de: automatización en Python, CRUDs Django, stacks Docker con WordPress + Nginx
+- ⚡ Fuera de código: Linux, pixel-art, arte digital
 
 ---
 
-### 🧰 Stack — [EDITAME: ordenado por el puesto que quieres, no alfabético]
+### 🧰 Stack
 
 <p>
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
@@ -54,60 +43,57 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
 </p>
 
-<!-- Badges flat-square con fondo sólido: legibles en claro y oscuro.
-     No agregues 40 badges — 6-8 máximo es lo que mejor convierte. -->
-
 ---
 
-### 📦 Proyectos que sí prueban lo que sé — [EDITAME: 1 frase + 1 dato por proyecto]
+### 📦 Proyectos destacados
 
-| Proyecto | Qué hace y resultado | Stack |
+| Proyecto | Qué hace | Stack |
 |---|---|---|
-| [Sistema-Integral-De-Inventario-Unea](https://github.com/nahataen/Sistema-Integral-De-Inventario-Unea) | [EDITAME: Ej. Control de stock para UNEA — usado en demo con X productos] | TypeScript |
-| [Proyecto-Museo](https://github.com/nahataen/Proyecto-Museo) | [EDITAME: Ej. MXDiscovery, catálogo con gráficos p5.js — deploy en X] | Django, React, TS |
-| [Organizador-de-archivos](https://github.com/nahataen/Organizador-de-archivos) | [EDITAME: Ej. Clasifica N archivos por extensión en 1 click] | Python |
-| [docker-wp-nginx-adminer](https://github.com/nahataen/docker-wp-nginx-adminer) | [EDITAME: Ej. Levanta WP + Nginx en 3 comandos] | Docker |
+| [Sistema-Integral-De-Inventario-Unea](https://github.com/nahataen/Sistema-Integral-De-Inventario-Unea) | Sistema integral de inventario para UNEA | TypeScript |
+| [Proyecto-Museo](https://github.com/nahataen/Proyecto-Museo) | MXDiscovery: catálogo de museo con gráficos dinámicos p5.js e interfaz moderna | Python/Django, React, TS, Tailwind, MySQL |
+| [Organizador-de-archivos](https://github.com/nahataen/Organizador-de-archivos) | Crea carpetas por extensión y organiza archivos automáticamente | Python |
+| [docker-wp-nginx-adminer](https://github.com/nahataen/docker-wp-nginx-adminer) | Stack WordPress + Nginx + Adminer listo con Docker | Docker |
 
 <details>
-<summary>🧪 Más labs y universidad (click para expandir)</summary>
+<summary>🧪 Más labs y universidad</summary>
 
-- 🦀 [Prueba-Tauri](https://github.com/nahataen/Prueba-Tauri) — [EDITAME: qué probaste]
-- 🤖 [MachineLearning](https://github.com/nahataen/MachineLearning) — [EDITAME: qué modelo]
-- 📷 [Image-Classification-GoogleAI](https://github.com/nahataen/Image-Classification-GoogleAI) — Google Vision
-- 🎓 Históricos: Unidad2/3, Exámenes, Prácticas HTML — conservados como historial
+- 🦀 [Prueba-Tauri](https://github.com/nahataen/Prueba-Tauri) — app desktop experimental con Rust + Tauri
+- 🤖 [MachineLearning](https://github.com/nahataen/MachineLearning) — ejercicios de ML en Python
+- 📷 [Image-Classification-GoogleAI](https://github.com/nahataen/Image-Classification-GoogleAI) — clasificación de imágenes con Google Vision
+- 📝 [Programacion-Funcional-Haskell](https://github.com/nahataen/Programacion-Funcional-Haskell) — To-Do list funcional en consola
+- 🏥 [Hospitalizaciones-Esperanza](https://github.com/nahataen/Hospitalizaciones-Esperanza) — CLI Java + MySQL para camas, médicos y recursos (fork)
+- 🎓 Históricos: Unidad2/3, Exámenes Java, Prácticas HTML, Django CRUD — conservados como historial
 
 </details>
 
 ---
 
-### 📊 Actividad — [EDITAME: no tocar, 1 solo tema en todos]
+### 📈 Actividad
 
-<!-- Truco claro/oscuro (vía <picture>, técnica de Frank Wiles / Simon Willison):
-     en dark usa tokyonight, en light usa default. Mismo dato, contraste correcto. -->
+<!-- Azul #2F81F7 + cian #39C5CF: contraste AA en claro y oscuro.
+     Se reemplaza el streak (se rompe y castiga vacaciones) por gráfico de actividad. -->
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&theme=default&hide_border=true&count_private=true&include_all_commits=true" />
-  <img alt="stats" src="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" height="150" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=2F81F7&icon_color=39C5CF&text_color=C9D1D9" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=24292F" />
+  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" height="150" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&theme=tokyonight&hide_border=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&theme=default&hide_border=true" />
-  <img alt="langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true" height="150" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true&bg_color=0D1117&title_color=2F81F7&text_color=C9D1D9" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true&bg_color=FFFFFF&title_color=0969DA&text_color=24292F" />
+  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true" height="150" />
 </picture>
 </p>
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=nahataen&theme=tokyonight&hide_border=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=nahataen&theme=default&hide_border=true" />
-  <img alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=nahataen&hide_border=true" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=nahataen&bg_color=0D1117&color=39C5CF&line=2F81F7&point=2F81F7&area=true&hide_border=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=nahataen&bg_color=FFFFFF&color=0969DA&line=0969DA&point=0969DA&area=true&hide_border=true" />
+  <img alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=nahataen&bg_color=FFFFFF&color=0969DA&line=0969DA&point=0969DA&area=true&hide_border=true" />
 </picture>
 </p>
 
 ---
 
-<p align="center">👾 <b>[EDITAME: ¿Hablamos? tu-email@mail.com]</b> — 1 solo CTA 👾</p>
-
-<pre align="center">🟦👾🟦  LVL 3 · [EDITAME: quest actual]  🟦👾🟦</pre>
+<p align="center">👾 25 repos públicos · 14 followers · Tijuana, MX · Open to work 👾</p>
