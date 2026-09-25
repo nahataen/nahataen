@@ -49,8 +49,8 @@
 
 | Proyecto | Qué hace | Stack |
 |---|---|---|
+| [SimplePipes](https://github.com/nahataen/simplepipes) | 🔧 Mod de tubos para Minecraft (Fabric): mueve objetos solo entre cofres y máquinas | Java, Fabric |
 | [Sistema-Integral-De-Inventario-Unea](https://github.com/nahataen/Sistema-Integral-De-Inventario-Unea) | Sistema integral de inventario para UNEA | TypeScript |
-| [Proyecto-Museo](https://github.com/nahataen/Proyecto-Museo) | MXDiscovery: catálogo de museo con gráficos dinámicos p5.js e interfaz moderna | Python/Django, React, TS, Tailwind, MySQL |
 | [Organizador-de-archivos](https://github.com/nahataen/Organizador-de-archivos) | Crea carpetas por extensión y organiza archivos automáticamente | Python |
 | [docker-wp-nginx-adminer](https://github.com/nahataen/docker-wp-nginx-adminer) | Stack WordPress + Nginx + Adminer listo con Docker | Docker |
 
@@ -61,6 +61,7 @@
 - 🤖 [MachineLearning](https://github.com/nahataen/MachineLearning) — ejercicios de ML en Python
 - 📷 [Image-Classification-GoogleAI](https://github.com/nahataen/Image-Classification-GoogleAI) — clasificación de imágenes con Google Vision
 - 📝 [Programacion-Funcional-Haskell](https://github.com/nahataen/Programacion-Funcional-Haskell) — To-Do list funcional en consola
+- 🏛️ [Proyecto-Museo](https://github.com/nahataen/Proyecto-Museo) — MXDiscovery: Django + React + TS + Tailwind + MySQL
 - 🏥 [Hospitalizaciones-Esperanza](https://github.com/nahataen/Hospitalizaciones-Esperanza) — CLI Java + MySQL para camas, médicos y recursos (fork)
 - 🎓 Históricos: Unidad2/3, Exámenes Java, Prácticas HTML, Django CRUD — conservados como historial
 
