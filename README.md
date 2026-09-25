@@ -71,16 +71,19 @@
 
 ### 📈 Actividad
 
-<!-- 👾 PARTICULAS: animacion 100% propia.
-     El script generador/genera_invasor.py lee tus contribuciones reales
-     y dibuja el SVG. El Action lo regenera solo cada dia en la rama output.
-     Sin servidores de terceros. -->
+<!-- Stats + lenguajes via github-readme-stats (servicio externo, sin Actions).
+     Azul #2F81F7 + cian #39C5CF adaptados a modo claro/oscuro. -->
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/particulas-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/particulas.svg" />
-  <img alt="Particulas sobre mis contribuciones" src="https://raw.githubusercontent.com/nahataen/nahataen/output/particulas.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=2F81F7&icon_color=39C5CF&text_color=C9D1D9" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=24292F" />
+  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=nahataen&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" height="150" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true&bg_color=0D1117&title_color=2F81F7&text_color=C9D1D9" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true&bg_color=FFFFFF&title_color=0969DA&text_color=24292F" />
+  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nahataen&layout=compact&hide_border=true" height="150" />
 </picture>
 </p>
 
