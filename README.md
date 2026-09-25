@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:2F81F7,100:39C5CF&height=200&section=header&text=Hey,%20I'm%20Nahataen%20👋&fontSize=36&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Fullstack%20Developer%20·%20Tijuana,%20MX&descSize=16&descAlignY=58" />
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:E8F0FE,50:0969DA,100:39C5CF&height=200&section=header&text=Hey,%20I'm%20Nahataen%20👋&fontSize=36&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Fullstack%20Developer%20·%20Tijuana,%20MX&descSize=16&descAlignY=58" />
+
   <img alt="Nahataen header" src="https://capsule-render.vercel.app/api?type=waving&color=0:0969DA,100:39C5CF&height=200&section=header&text=Hey,%20I'm%20Nahataen%20👋&fontSize=36&fontColor=FFFFFF&fontAlignY=38&desc=Fullstack%20Developer%20·%20Tijuana,%20MX&descSize=16&descAlignY=58" />
 </picture>
 
