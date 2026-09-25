@@ -89,14 +89,6 @@
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nahataen/nahataen/output/github-snake.svg" />
-  <img alt="Snake azul comiendo contribuciones" src="https://raw.githubusercontent.com/nahataen/nahataen/output/github-snake.svg" />
-</picture>
-</p>
-
-<p align="center">
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=nahataen&theme=tokyonight&no-frame=true&row=1&column=6" />
   <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=nahataen&theme=flat&no-frame=true&row=1&column=6" />
   <img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=nahataen&theme=flat&no-frame=true&row=1&column=6" />
