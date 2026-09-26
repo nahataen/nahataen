@@ -83,11 +83,9 @@ Disfruto programar, dibujar, explorar Linux y aprender sobre nuevas herramientas
 ---
 | Proyecto | Descripción | Stack |
 |---|---|---|
-| [Prueba-Tauri](https://github.com/nahataen/Prueba-Tauri) | App desktop experimental | Rust, Tauri |
 | [MachineLearning](https://github.com/nahataen/MachineLearning) | Ejercicios de ML | Python |
 | [Image-Classification-GoogleAI](https://github.com/nahataen/Image-Classification-GoogleAI) | Clasificación de imágenes | Google Vision |
 | [Programacion-Funcional-Haskell](https://github.com/nahataen/Programacion-Funcional-Haskell) | To-Do list funcional en consola | Haskell |
-| [Proyecto-Museo](https://github.com/nahataen/Proyecto-Museo) | MXDiscovery | Django, React, TS, Tailwind, MySQL |
 | [Hospitalizaciones-Esperanza](https://github.com/nahataen/Hospitalizaciones-Esperanza) | CLI para camas, médicos y recursos (fork) | Java, MySQL |
 
 
