@@ -81,6 +81,8 @@ Disfruto programar, dibujar, explorar Linux y aprender sobre nuevas herramientas
 
 
 ---
+<div align="center">
+
 | Proyecto | Descripción | Stack |
 |---|---|---|
 | [MachineLearning](https://github.com/nahataen/MachineLearning) | Ejercicios de ML | Python |
@@ -88,7 +90,7 @@ Disfruto programar, dibujar, explorar Linux y aprender sobre nuevas herramientas
 | [Programacion-Funcional-Haskell](https://github.com/nahataen/Programacion-Funcional-Haskell) | To-Do list funcional en consola | Haskell |
 | [Hospitalizaciones-Esperanza](https://github.com/nahataen/Hospitalizaciones-Esperanza) | CLI para camas, médicos y recursos (fork) | Java, MySQL |
 
-
+</div>
 
 </details>
 
