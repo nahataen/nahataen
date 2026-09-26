@@ -1,7 +1,10 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:2F81F7,100:39C5CF&height=200&section=header&text=¡Hola,%20soy%20Nahataen!%20👋&fontSize=34&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Desarrollador%20Fullstack%20·%20Tijuana,%20MX&descSize=16&descAlignY=58" />
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:E8F0FE,50:0969DA,100:39C5CF&height=200&section=header&text=¡Hola,%20soy%20Nahataen!%20👋&fontSize=34&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Desarrollador%20Fullstack%20·%20Tijuana,%20MX&descSize=16&descAlignY=58" />
-  <img alt="Encabezado Nahataen" src="https://capsule-render.vercel.app/api?type=waving&color=0:0969DA,100:39C5CF&height=200&section=header&text=¡Hola,%20soy%20Nahataen!%20👋&fontSize=34&fontColor=FFFFFF&fontAlignY=38&desc=Desarrollador%20Fullstack%20·%20Tijuana,%20MX&descSize=16&descAlignY=58" />
+  <!-- Modo Oscuro (Dark Theme) -->
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1F6FEB,100:39C5CF&height=200&section=header&text=¡Hola,%20soy%20Nahataen!%20👋&fontSize=34&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Desarrollador%20Fullstack%20·%20Tijuana,%20MX&descSize=16&descAlignY=58" />
+  <!-- Modo Claro (Light Theme) -->
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FFFFFF,50:E8F0FE,100:BAE6FD&height=200&section=header&text=¡Hola,%20soy%20Nahataen!%20👋&fontSize=34&fontColor=000000&animation=fadeIn&fontAlignY=38&desc=Desarrollador%20Fullstack%20·%20Tijuana,%20MX&descSize=16&descAlignY=58" />
+  <!-- Fallback/Predeterminado -->
+  <img alt="Encabezado Nahataen" src="https://capsule-render.vercel.app/api?type=waving&color=0:FFFFFF,50:E8F0FE,100:BAE6FD&height=200&section=header&text=¡Hola,%20soy%20Nahataen!%20👋&fontSize=34&fontColor=000000&fontAlignY=38&desc=Desarrollador%20Fullstack%20·%20Tijuana,%20MX&descSize=16&descAlignY=58" />
 </picture>
 
 
@@ -17,18 +20,14 @@
 
 ---
 
-### 👾 Sobre mí
+### <p align="center"> 👾 Sobre mí
+Soy una persona curiosa a la que le gusta aprender y experimentar con cosas nuevas. Me interesan la tecnología, el arte digital, la animación y todo lo relacionado con crear cosas desde cero.
 
-```text
-🔭 Último proyecto  → Sistema integral de inventario UNEA (TypeScript)
-🌱 Enfoque              → Frontend React + TS · Backend Python/Django + MySQL · Docker
-💬 Pregúntame de        → Automatización en Python, CRUDs Django, stacks Docker (WordPress + Nginx)
-⚡ Fuera de código       → Linux, pixel-art, arte digital
-```
+Disfruto programar, dibujar, explorar Linux y aprender sobre nuevas herramientas. Suelo tener varios proyectos e ideas en mente y me gusta convertir algunas de ellas en algo que pueda compartir con los demás.
 
 ---
 
-### 🧰 Stack
+### <p align="center"> 🧰 Stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
@@ -44,40 +43,44 @@
 
 ---
 
-### 📦 Proyectos destacados
+### <p align="center"> 📦 Proyectos destacados
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h4>🔧 <a href="https://github.com/nahataen/simplepipes">SimplePipes</a></h4>
       Mod de tubos para Minecraft (Fabric): mueve objetos solo entre cofres y máquinas.<br/>
+      <br/>
       <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
       <img src="https://img.shields.io/badge/Fabric-3A3A3A?style=flat-square" />
     </td>
     <td width="50%" valign="top">
       <h4>📋 <a href="https://github.com/nahataen/Sistema-Integral-De-Inventario-Unea">Sistema Integral de Inventario UNEA</a></h4>
-      Sistema integral de inventario para la universidad.<br/>
+      Sistema integral de inventario para la universidad.<br/><br/><br/>
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h4>🗂️ <a href="https://github.com/nahataen/Organizador-de-archivos">Organizador de archivos</a></h4>
-      Crea carpetas por extensión y organiza archivos automáticamente.<br/>
+      Crea carpetas por extensión y organiza archivos automáticamente.<br/><br/>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
     </td>
     <td width="50%" valign="top">
       <h4>🐳 <a href="https://github.com/nahataen/docker-wp-nginx-adminer">docker-wp-nginx-adminer</a></h4>
-      Stack WordPress + Nginx + Adminer listo con Docker.<br/>
+      Stack WordPress + Nginx + Adminer listo con Docker.<br/><br/>
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
     </td>
   </tr>
 </table>
 
-<details>
-<summary>🧪 Más labs y universidad</summary>
-<br/>
+<details><br/><br/>
 
+---
+### <p align="center"> 🧪 Otras prácticas </p>
+
+
+---
 | Proyecto | Descripción | Stack |
 |---|---|---|
 | [Prueba-Tauri](https://github.com/nahataen/Prueba-Tauri) | App desktop experimental | Rust, Tauri |
@@ -87,7 +90,7 @@
 | [Proyecto-Museo](https://github.com/nahataen/Proyecto-Museo) | MXDiscovery | Django, React, TS, Tailwind, MySQL |
 | [Hospitalizaciones-Esperanza](https://github.com/nahataen/Hospitalizaciones-Esperanza) | CLI para camas, médicos y recursos (fork) | Java, MySQL |
 
-*Históricos: Unidad2/3, Exámenes Java, Prácticas HTML, Django CRUD — conservados como historial.*
+
 
 </details>
 
