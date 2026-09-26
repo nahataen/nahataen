@@ -22,7 +22,7 @@
 ### <p align="center"> 🌱 Sobre mí
 
 *Desarrollador de software con enfoque a utilizar diferentes herramientas. 
-Interés en ilustración digital como en modelado 3d.
+Interés en ilustración digital y modelado 3d.
 Me adapto rápido a nuevas tecnologías.* 
 
 </div>
