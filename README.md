@@ -12,9 +12,7 @@
 
 
 <p align="center">
-  <a href="https://github.com/nahataen"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <img src="https://img.shields.io/badge/Tijuana%2C%20MX-0969DA?style=for-the-badge&logo=googlemaps&logoColor=white" />
-  <img src="https://komarev.com/ghpvc/?username=nahataen&style=for-the-badge&color=2F81F7&label=VISITAS" alt="Contador de visitas" />
+
 </p>
 
 <div align="center">
